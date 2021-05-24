@@ -11,7 +11,7 @@ class searchResultsCest
         $I->fillField('#search_query_top', 'Printed dress');
         // click Search button
         $I->click('#searchbox > button');
-        // check if number of search result equals 5
+        // check if number of search result is 5
         $I->seeNumberOfElements('//*[@id="center_column"]/ul/li', 5);
     }
 }

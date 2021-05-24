@@ -14,7 +14,7 @@ class checkItemNameCest
         $I->moveMouseOver('#homefeatured > li:nth-child(2) > div');
         // click button Quick view
         $I->clickWithLeftButton('#homefeatured > li:nth-child(2) > div > div.left-block > div > a.quick-view > span');
-        // wait for till the modal window loads 
+        // wait for till the iframe loads 
         $I->waitForElementVisible('#index > div.fancybox-overlay.fancybox-overlay-fixed > div',30);
         // check the right item name
         $I->see('Blouse');
