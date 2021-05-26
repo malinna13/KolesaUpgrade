@@ -2,6 +2,13 @@
 
 class searchResultsCest
 {
+    $searchInputCss = '#search_query_top';
+    $searchInputXPath = '//input[@id="search_query_top"]';
+    $searchButtonCss = '#searchbox > button';
+    $searchButtonXPath = '//button[@name="submit_search"]';
+    $searchResultsCss = '#center_column > ul > li';
+    $searchResultsXPath = '//div[@id="center_column"]/ul/li'; 
+    
     // tests
     public function searchResultNumber(FunctionalTester $I)
     {
