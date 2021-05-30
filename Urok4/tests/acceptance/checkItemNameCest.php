@@ -2,14 +2,14 @@
 
 class checkItemNameCest
 {
-    $itemBlouseCss = '#homefeatured div.right-block a[title="Blouse"]';
-    $itemBlouseXPath = '//ul[@id="homefeatured"]//div[@class="right-block"]//a[@title="Blouse"]';
-    $itemToHoverCss = '#homefeatured li:nth-child(2) div.product-container';
-    $itemToHoverXPath = '//ul[@id="homefeatured"]/li[2]/div';
-    $quickViewButtonCss = '#homefeatured > li:nth-child(2) a.quick-view span';
-    $quickViewButtonXPath = '//ul[@id="homefeatured"]/li[2]//a[@class="quick-view"]/span';
-    $iFrameCss = 'div.fancybox-opened';
-    $iFrameXPath = '//div[@class="fancybox-wrap fancybox-desktop fancybox-type-iframe fancybox-opened"]';
+    // $ItemBlouseCss = '#homefeatured div.right-block a[title="Blouse"]';
+    // $itemBlouseXPath = '//ul[@id="homefeatured"]//div[@class="right-block"]//a[@title="Blouse"]';
+    // $itemToHoverCss = '#homefeatured li:nth-child(2) div.product-container';
+    // $itemToHoverXPath = '//ul[@id="homefeatured"]/li[2]/div';
+    // $quickViewButtonCss = '#homefeatured > li:nth-child(2) a.quick-view span';
+    // $quickViewButtonXPath = '//ul[@id="homefeatured"]/li[2]//a[@class="quick-view"]/span';
+    // $iFrameCss = 'div.fancybox-opened';
+    // $iFrameXPath = '//div[@class="fancybox-wrap fancybox-desktop fancybox-type-iframe fancybox-opened"]';
     
     // tests
     public function openCorrectItem(AcceptanceTester $I)
