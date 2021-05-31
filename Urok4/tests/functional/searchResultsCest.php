@@ -1,8 +1,12 @@
 <?php
-
+/**
+ * Класс для проверки количества результатов поиска
+ */
 class searchResultsCest
 {
-    // tests
+    /**
+     * Проверка количества результатов поиска
+     */
     public function searchResultNumber(FunctionalTester $I)
     {
         // open page http://automationpractice.com/index.php

@@ -1,9 +1,13 @@
 <?php
-
+/**
+ * Класс для проверки быстрого просмотра товара
+ */
 class checkItemNameCest
 {
   
-    // tests
+    /**
+     * Проверка названия товара в модальном окне быстрого просмотра
+     */
     public function openCorrectItem(AcceptanceTester $I)
     {
         // open page http://automationpractice.com/index.php
@@ -18,6 +22,5 @@ class checkItemNameCest
         $I->waitForElementVisible('#index > div.fancybox-overlay.fancybox-overlay-fixed > div',30);
         // check the right item name
         $I->see('Blouse');
-
     }
 }
