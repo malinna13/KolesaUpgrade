@@ -9,7 +9,7 @@ class checkItemNameCest
     $quickViewButtonCss = '#homefeatured > li:nth-child(2) a.quick-view span';
     $quickViewButtonXPath = '//ul[@id="homefeatured"]/li[2]//a[@class="quick-view"]/span';
     $iFrameCss = 'div.fancybox-opened';
-    $iFrameXPath = '//div[@class="fancybox-wrap fancybox-desktop fancybox-type-iframe fancybox-opened"]';
+    $iFrameXPath = '//div[contains(@Class, 'fancybox-opened')]';
     
     // tests
     public function openCorrectItem(AcceptanceTester $I)
