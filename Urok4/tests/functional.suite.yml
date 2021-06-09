@@ -9,7 +9,10 @@ actor: FunctionalTester
 modules:
     enabled: 
         - PhpBrowser:
-            url: http://automationpractice.com/
+            url: 'http://api.izze.xyz/test/'
         # add a framework module here
         - \Helper\Functional
+        - REST:
+           depends: PhpBrowser
+           url: 'http://api.izze.xyz/test/'
     step_decorators: ~        

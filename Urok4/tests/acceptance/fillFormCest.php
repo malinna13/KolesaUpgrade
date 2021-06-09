@@ -48,7 +48,7 @@ class fillFormCest
         $I->fillField(FillPage::$cardcvv, $ccCVV);
         $I->selectOption(FillPage::$cardMonth, 'October');
         $I->selectOption(FillPage::$cardYear, '2025');
-        $I->wait(20);
+      //  $I->wait(20);
         $I->click(FillPage::$registerButton);
         $I->waitForText('Good job');
     }
