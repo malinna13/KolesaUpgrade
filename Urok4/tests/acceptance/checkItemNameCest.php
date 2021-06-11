@@ -1,17 +1,26 @@
 <?php
-
+/**
+ * Класс для проверки быстрого просмотра товара
+ */
 class checkItemNameCest
 {
-    // $ItemBlouseCss = '#homefeatured div.right-block a[title="Blouse"]';
-    // $itemBlouseXPath = '//ul[@id="homefeatured"]//div[@class="right-block"]//a[@title="Blouse"]';
-    // $itemToHoverCss = '#homefeatured li:nth-child(2) div.product-container';
-    // $itemToHoverXPath = '//ul[@id="homefeatured"]/li[2]/div';
-    // $quickViewButtonCss = '#homefeatured > li:nth-child(2) a.quick-view span';
-    // $quickViewButtonXPath = '//ul[@id="homefeatured"]/li[2]//a[@class="quick-view"]/span';
-    // $iFrameCss = 'div.fancybox-opened';
-    // $iFrameXPath = '//div[@class="fancybox-wrap fancybox-desktop fancybox-type-iframe fancybox-opened"]';
+
+    $itemBlouseCss = '#homefeatured div.right-block a[title="Blouse"]';
+    $itemBlouseXPath = '//ul[@id="homefeatured"]//div[@class="right-block"]//a[@title="Blouse"]';
+    $itemToHoverCss = '#homefeatured li:nth-child(2) div.product-container';
+    $itemToHoverXPath = '//ul[@id="homefeatured"]/li[2]/div';
+    $quickViewButtonCss = '#homefeatured > li:nth-child(2) a.quick-view span';
+    $quickViewButtonXPath = '//ul[@id="homefeatured"]/li[2]//a[@class="quick-view"]/span';
+    $iFrameCss = 'div.fancybox-opened';
+    $iFrameXPath = '//div[contains(@Class, 'fancybox-opened')]';
     
     // tests
+
+  
+    /**
+     * Проверка названия товара в модальном окне быстрого просмотра
+     */
+
     public function openCorrectItem(AcceptanceTester $I)
     {
         // open page http://automationpractice.com/index.php
@@ -26,6 +35,5 @@ class checkItemNameCest
         $I->waitForElementVisible('#index > div.fancybox-overlay.fancybox-overlay-fixed > div',30);
         // check the right item name
         $I->see('Blouse');
-
     }
 }
