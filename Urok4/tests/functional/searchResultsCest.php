@@ -4,7 +4,6 @@
  */
 class searchResultsCest
 {
-
     $searchInputCss = '#search_query_top';
     $searchInputXPath = '//input[@id="search_query_top"]';
     $searchButtonCss = '#searchbox > button';
