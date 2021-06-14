@@ -7,7 +7,7 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
       - name: Install Dependencies
-        run: composer install
+        run: Urok4/composer install
       - name: Install Faker
         run: composer require fzaniotto/faker
       - name: Run chromedriver
