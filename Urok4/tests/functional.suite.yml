@@ -15,4 +15,8 @@ modules:
         - REST:
            depends: PhpBrowser
            url: 'http://api.izze.xyz/test/'
+        - MongoDb:
+           dsn: 'mongodb://46.101.235.30/upgradeApp'
+           populate: false
+           cleanup: false
     step_decorators: ~        

@@ -9,8 +9,9 @@ modules:
     enabled:
         - WebDriver:
             #url: https://habr.com/ru/
-            url: https://prostochizh.github.io/form/
+            #url: https://prostochizh.github.io/form/
             #url: http://automationpractice.com/
+            url: http://izze.xyz/
             host: localhost
             port: 9515
             browser: chrome
@@ -18,4 +19,8 @@ modules:
         - \Helper\Acceptance
         - \Helper\BaseHelper
         - Asserts
+        - MongoDb:
+            dsn: 'mongodb://46.101.235.30/upgradeApp'
+            populate: false
+            cleanup: false
 step_decorators: ~        
