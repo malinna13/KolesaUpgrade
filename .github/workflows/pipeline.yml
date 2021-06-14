@@ -6,8 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
-      - name: Install Dependencies
+      - name: Change Directory
         run: cd Urok4 
+      - name: Install Dependencies
         run: composer install
       - name: Install Faker
         run: composer require fzaniotto/faker
